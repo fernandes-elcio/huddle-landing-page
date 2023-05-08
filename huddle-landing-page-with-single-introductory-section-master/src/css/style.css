@@ -1,0 +1,262 @@
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+ html {
+     font-size: 62, 5%;
+ }
+
+ body {
+     font-family: 'open sans', sans-serif;
+     font-size: 1.6;
+     font-weight: 400;
+     max-width: 1440px;
+     min-height: 100vh;
+     background-image: url(../images/bg-desktop.svg) no-repeat;
+     background-size: cover;
+     background-color: var(--Violet);
+
+
+ }
+
+ .cabecalho {
+     display: flex;
+     align-items: center;
+     padding: 55px;
+
+ }
+
+ .cabecalho .hud-logo {
+     width: 100%;
+
+
+ }
+
+ .cabecalho .hud-logo img {
+     width: 220px;
+ }
+
+ .container {
+     display: flex;
+     justify-content: center;
+     max-width: 90%;
+ }
+
+ .container .hud-img {
+     display: flex;
+     max-width: 100%;
+     align-items: center;
+     gap: 55px;
+
+ }
+
+ .container .hud-img .img {
+     background-size: cover;
+ }
+
+ .container .description {
+     color: #FFFFFF;
+     max-width: 50%;
+     padding-bottom: 110px;
+     flex: 1;
+ }
+
+
+ .container .description .hud-title {
+     color: white;
+     font-family: 'Poppins', sans-serif;
+     font-size: 2.5rem;
+     font-weight: 600;
+ }
+
+
+ .container .description .hud-text {
+     font-family: 'Open Sans', sans-serif;
+     color: #FFF;
+     font-size: 1.1rem;
+     font-weight: 400;
+     line-height: 1.6;
+     opacity: .9;
+     padding-bottom: 20px;
+
+ }
+
+ .description .hud-botao a {
+     display: inline-block;
+     font-family: 'Poppins', sans-serif;
+     text-decoration: none;
+     background-color: #FFF;
+     padding: 15px 70px;
+     border-radius: 50px;
+     box-shadow: 0 8px 17px 0.8px rgba(0, 0, 0, 0.8);
+     transition: all 0.3s ease-in-out;
+ }
+
+ .description .hud-botao a:hover {
+     background-color: var(--Soft-Magenta);
+     color: white;
+ }
+
+ .hud-rodape .social-links {
+     display: flex;
+     align-items: center;
+     justify-content: flex-end;
+     padding: 20px;
+     list-style-type: none;
+ }
+
+
+
+ .hud-rodape .social-links a i {
+     color: #FFF;
+ }
+
+ .hud-rodape .social-links a {
+     border: 2px solid #FFFFFF;
+     border-radius: 50%;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     height: 40px;
+     width: 40px;
+     margin-left: 14PX;
+     text-decoration: none;
+     transition: all 0.3s ease-in-out;
+ }
+
+ .hud-rodape .social-links a:hover i {
+     color: var(--Soft-Magenta);
+
+ }
+
+ .hud-rodape .social-links a:hover {
+     border-color: var(--Soft-Magenta);
+ }
+
+ @media (max-width: 1150px) {
+     .hud-rodape {
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+         margin: auto;
+         padding: 40px 0;
+     }
+
+ }
+
+ @media (max-width: 768px) {
+     body {
+         background: url(/src/images/bg-mobile.svg) no-repeat;
+         background-color: var(--Violet);
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         margin: 0 auto;
+     }
+
+     .cabecalho {
+         width: 100%;
+     }
+
+     .container {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+     }
+
+     .container .hud-img {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .container .hud-img img {
+         width: 100%;
+         text-align: center;
+     }
+
+     .container .description {
+         max-width: 100%;
+     }
+
+     .container .description .hud-title {
+         font-size: 2.5rem;
+     }
+
+     .container .description .hud-text {
+         font-size: 1.8rem;
+         padding: 30px;
+     }
+     .hud-rodape {
+        padding: 40px ;
+    }
+
+
+
+ }
+
+ @media (max-width: 375px) {
+     body {
+         background: url(/src/images/bg-mobile.svg) no-repeat;
+         background-color: var(--Violet);
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         margin: 0;
+         padding: 0;
+     }
+
+     .cabecalho {
+         width: 100%;
+         padding-left: 30px;
+
+     }
+
+     .cabecalho .hud-logo {
+         width: 130px;
+
+     }
+
+     .container .description {
+         padding: 0;
+     }
+
+     .container .description .hud-title {
+         font-size: 1.5rem;
+
+     }
+
+     .container .description .hud-text {
+         padding: 20px;
+         font-size: 15px;
+         line-height: 25px;
+
+     }
+
+     .description .hud-botao a {
+         padding: 10px 75px;
+     }
+
+
+     .description .hud-botao a.register {
+         font-size: 12px;
+     }
+
+     .hud-rodape .social-links {
+         padding: 50px;
+     }
+
+     .hud-rodape .social-links a {
+         width: 50%;
+         border: 1px solid #FFFFFF;
+         border-radius: 50%;
+         display: inline-flex;
+         align-items: center;
+         justify-content: center;
+         height: 30px;
+         width: 30px;
+         margin-left: 9px;
+     }
+ }
